@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$background-color: rgb(250, 255, 255);
+
+body {
+  background: $background-color;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media print {
+  body {
+    color-adjust: exact;
+    -webkit-print-color-adjust: economy;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+table {
+  td:first-child {
+    font-weight: bold;
+  }
+  td {
+    padding: 5pt;
+    border: 1px solid;
+    li {
+      list-style-type: "- ";
+      padding: 0 5pt;
+    }
+  }
+}

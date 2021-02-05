@@ -1,0 +1,28 @@
+<main class="resume-canvas" *ngIf="resume && resume.page1">
+  <div class="grid-parent">
+    <div class="left-info-header uppercase">
+      <div class="img"><img [src]="resume.img1" /></div>
+    </div>
+    <div class="right-info-header uppercase">
+      <div class="name">{{ resume.name }}</div>
+      <div class="position">{{ resume.positionTitle }}</div>
+    </div>
+    <div class="left-info page1">
+      <app-section [information]="resume.page1.leftInfo"></app-section>
+    </div>
+    <div class="right-info page1">
+      <app-section [information]="resume.page1.rightInfo"></app-section>
+    </div>
+  </div>
+</main>
+
+<main class="resume-canvas" *ngIf="resume && resume.page2">
+  <div class="grid-parent">
+    <!-- <div class="left-info">
+      <app-section [information]="resume.page2.leftInfo"></app-section>
+    </div> -->
+    <div class="right-info page2">
+      <app-section [information]="resume.page2.rightInfo"></app-section>
+    </div>
+  </div>
+</main>
