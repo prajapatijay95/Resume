@@ -533,19 +533,19 @@ export class ResumeComponent implements OnInit {
                         <strong>E</strong>: christian.trigg@santos.com`
                 },
                 {
-                  title: 'Ref 3',
-                  content: `Technical System Analyst <br/ >
+                  title: 'Flic Gibbs',
+                  content: `Business Analyst <br/ >
                         Santos Limited <br />
-                        <strong>P</strong>: +61 421 789 225 <br />
-                        <strong>E</strong>: christian.trigg@santos.com`
+                        <strong>P</strong>: +61 450 480 292 <br />
+                        <strong>E</strong>: flic.gibbs@santos.com`
                 },
-                {
-                  title: 'Ref 4',
-                  content: `Technical System Analyst <br/ >
-                        Santos Limited <br />
-                        <strong>P</strong>: +61 421 789 225 <br />
-                        <strong>E</strong>: christian.trigg@santos.com`
-                }
+                // {
+                //   title: 'Ref 4',
+                //   content: `Technical System Analyst <br/ >
+                //         Santos Limited <br />
+                //         <strong>P</strong>: +61 421 789 225 <br />
+                //         <strong>E</strong>: christian.trigg@santos.com`
+                // }
               ]
             }
           ]
