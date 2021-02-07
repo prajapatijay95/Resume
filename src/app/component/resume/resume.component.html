@@ -1,28 +1,23 @@
-<main class="resume-canvas" *ngIf="resume && resume.page1">
+<main class="resume-canvas" *ngFor="let page of resume.pages; let i = index">
   <div class="grid-parent">
-    <div class="left-info-header uppercase">
-      <div class="img"><img [src]="resume.img1" /></div>
+    <div class="left-info-header uppercase" *ngIf="i == 0">
+      <div class="img"><img [src]="resume.img" /></div>
     </div>
-    <div class="right-info-header uppercase">
+    <div class="right-info-header uppercase" *ngIf="i == 0">
       <div class="name">{{ resume.name }}</div>
       <div class="position">{{ resume.positionTitle }}</div>
     </div>
-    <div class="left-info page1">
-      <app-section [information]="resume.page1.leftInfo"></app-section>
+    <div
+      class="left-info page{{ i + 1 }} {{ page.lstyle }}"
+      *ngIf="page.leftInfo"
+    >
+      <app-section [information]="page.leftInfo"></app-section>
     </div>
-    <div class="right-info page1">
-      <app-section [information]="resume.page1.rightInfo"></app-section>
-    </div>
-  </div>
-</main>
-
-<main class="resume-canvas" *ngIf="resume && resume.page2">
-  <div class="grid-parent">
-    <!-- <div class="left-info">
-      <app-section [information]="resume.page2.leftInfo"></app-section>
-    </div> -->
-    <div class="right-info page2">
-      <app-section [information]="resume.page2.rightInfo"></app-section>
+    <div
+      class="right-info page{{ i + 1 }} {{ page.rstyle }}"
+      *ngIf="page.rightInfo"
+    >
+      <app-section [information]="page.rightInfo"></app-section>
     </div>
   </div>
 </main>

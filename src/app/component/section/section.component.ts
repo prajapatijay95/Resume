@@ -1,9 +1,11 @@
-import { Component, Input, OnInit } from "@angular/core";
-import { DomSanitizer } from "@angular/platform-browser";
+import { Component, Input, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 export interface SectionModel {
   icon?: any;
   title?: string;
+  subTitle?: string;
+  hide?: boolean;
   contents: {
     icon?: any;
     title?: string;
@@ -12,10 +14,10 @@ export interface SectionModel {
 }
 
 @Component({
-  selector: "app-section",
+  selector: 'app-section',
   template: `
     <div class="section" *ngFor="let info of information">
-      <div class="section-icon-container" *ngIf="info.icon">
+      <div class="section-icon-container" *ngIf="info.icon && !info.hide">
         <div class="section-icon">
           <fa-icon
             [border]="false"
@@ -24,10 +26,13 @@ export interface SectionModel {
             size="lg"
           ></fa-icon>
         </div>
-        <div class="section-icon-border"></div>
+        <div class="section-icon-border"><div></div></div>
       </div>
-      <div class="section-container">
-        <div class="section-title uppercase">{{ info.title }}</div>
+      <div class="section-container" *ngIf="!info.hide">
+        <div class="section-title uppercase">
+          {{ info.title }}
+          <sub *ngIf="info.subTitle">{{ info.subTitle }}</sub>
+        </div>
         <div class="section-content" *ngFor="let content of info.contents">
           <div class="icon" *ngIf="content.icon">
             <fa-icon
@@ -50,10 +55,10 @@ export interface SectionModel {
       </div>
     </div>
   `,
-  styleUrls: ["./section.component.scss"],
+  styleUrls: ['./section.component.scss']
 })
 export class SectionComponent implements OnInit {
-  @Input("information") information: SectionModel[] = [];
+  @Input('information') information: SectionModel[] = [];
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {}

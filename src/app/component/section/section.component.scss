@@ -16,10 +16,15 @@ $font-color: #545452;
       padding: 0.3em 0.4em;
     }
     .section-icon-border {
-      margin: 10pt 0;
-      height: CALC(100% - 20pt);
-      width: 50%;
-      border-right: 2pt solid;
+      height: calc(100% - 20pt);
+      position: relative;
+      div {
+        border-right: 2pt solid;
+        height: 100%;
+        top: 10pt;
+        position: absolute;
+        left: calc(50% - 2px);
+      }
     }
   }
   .section-container {
@@ -33,6 +38,9 @@ $font-color: #545452;
       font-weight: bold;
       letter-spacing: 1.5pt;
       flex: 1;
+      sub {
+        font-weight: normal;
+      }
     }
     .section-content {
       margin-top: 10pt;
