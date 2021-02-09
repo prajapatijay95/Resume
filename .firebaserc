@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jaykumar-resume": {
+      "hosting": {
+        "MyResume": [
+          "jaykumar-resume"
+        ]
+      }
+    }
+  }
+}
