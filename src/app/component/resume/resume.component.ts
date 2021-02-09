@@ -82,7 +82,8 @@ export class ResumeComponent implements OnInit {
               title: 'Profile',
               contents: [
                 {
-                  content: `My goal is to work with an organization where I can apply my knowledge and skills. These would be beneficial for the company and my personal experience. I am growing professionally with every engagement and believe there is a lot that I can contribute. Finally, looking forward to work in an organization, where I can utilize my knowledge and discharge responsibilities assigned to me in the best possible manner, thereby resulting in a relationship of mutual growth.`
+                  content: `In my professional life, I strive for technical excellence, continual improvement & progression, being valued, working collaboratively towards a common outcome, and with enough autonomy to allow my creative side to flourish. With every engagement, I find myself more dedicated and excited by new challenges. I believe I have a lot to contribute and would relish the opportunity to work for an organisation that nurtures enthusiasm, as I believe it results in a relationship of mutual growth. I am aiming to secure a full-stack software developer position where I have some involvement in the software architecture, direction, strategy etc. I'm also keen to build on my team leadership and mentoring skills.
+                  `
                 }
               ]
             },
@@ -130,23 +131,29 @@ export class ResumeComponent implements OnInit {
                   title: 'Developer Programmer',
                   content: `
                 <strong>Tata Consultancy Services Limited | Jun 2015 - Present</strong> <br /><br />
-                Followings are my overall Roles & Responsibilities for the projects listed below:
-                <li>Team Leader</li>
-                <li>Get the requirements</li>
-                <li>Develop the application</li>
+                Overall Roles & Responsibilities for the projects listed below:
+                <li>Team Leadership</li>
+                <li>Requirement gathering & analysis</li>
+                <li>Application development</li>
                 <li>Application testing</li>
-                <li>Maintain the technical documents</li>
-                <li>Co-ordination with business</li>
+                <li>Technical documentation</li>
+                <li>Stakeholder liaison</li>
                 <br />
                 Australia | Jul 2020 - Present <br/>
                 <table>
                   <tr>
                     <td>Project name</td>
-                    <td>Integrated Risk Register (IRR)</td>
+                    <td>Integrated Risk Register Application development</td>
                   </tr>
                   <tr>
                     <td>Description</td>
-                    <td>The IRR is the one-stop shop for operational risk management, allowing all risks for a particular asset to be readily and clearly visible to users. There are three different types of risks that are captured in the IRR, these are significant hazards, which are the ever-present and the reality of doing business in the hydrocarbon industry. Significant hazards are identified up front and are not a business risk if the controls remain effective.</td>
+                    <td>The application that I developed in conjunction with a team of Process Safety SME’s, IT and Systems
+                    Analysts, is being used for capturing, analysing and managing operational risk in an Oil and Gas
+                    Company. This allows full transparency of all risks within the company and to industry regulators for
+                    safe and reliable operations. The application is intuitive to use at all levels of the organisation, from
+                    front line personnel, to VP and EVP. It was developed within the guidelines of company and industry
+                    standards and integrates with several other key applications. It has been described by external
+                    regulators as “Industry Best Practice” for operational Risk Management.</td>
                   </tr>
                   <tr>
                   <td>Used Technologies</td>
@@ -184,7 +191,7 @@ export class ResumeComponent implements OnInit {
                   </tr>
                   <tr>
                     <td>Description</td>
-                    <td>Visualize the daily carbon emission report using the data coming from the EnergySys application. Where business is having a feature to compare it with historical data with calculated estimated and average values by area.</td>
+                    <td>Visualize the daily carbon emission report using data coming from an EnergySys application. Users can compare current data against historic data, with calculated estimated and average values by area.</td>
                   </tr>
                   <tr>
                   <td>Used Technologies</td>
@@ -236,7 +243,7 @@ export class ResumeComponent implements OnInit {
                   </tr>
                   <tr>
                     <td>Description</td>
-                    <td>Visualize the company performance using the risk and production data using the HighCharts.</td>
+                    <td>Visualize high-level company risk and production performance using HighCharts.</td>
                   </tr>
                   <tr>
                   <td>Used Technologies</td>
@@ -271,7 +278,7 @@ export class ResumeComponent implements OnInit {
                   </tr>
                   <tr>
                     <td>Description</td>
-                    <td>The Forms Portal application is the one-stop shop for all the organization-wide forms, where each form are having their separate workflow(s).</td>
+                    <td>The Forms Portal application is a bespoke product offering similar functionality to SharePoint forms with Power Automate. Each form has a rich interface and its own workflow.</td>
                   </tr>
                   <tr>
                   <td>Used Technologies</td>
@@ -360,7 +367,7 @@ export class ResumeComponent implements OnInit {
                   </tr>
                   <tr>
                     <td>Description</td>
-                    <td>Facial Recognition is a project created using the combination of OpenCV & TensorFlow to fill the attendance.</td>
+                    <td>Facial Recognition is a project created using a combination of OpenCV & TensorFlow, to auto-complete attendance records.</td>
                   </tr>
                   <tr>
                   <td>Used Technologies</td>
@@ -426,7 +433,7 @@ export class ResumeComponent implements OnInit {
                   </tr>
                   <tr>
                     <td>Description</td>
-                    <td>The India Portal is a project where anyone can come and get all the information about India on all the levels like state, district, and village. The information can be about industries, interesting places, regional places, population, etc.</td>
+                    <td>The India Portal is a project where anyone can draw information about India at various levels such as state, district, and village. The information can be about industries, interesting places, regional places, population, etc.</td>
                   </tr>
                   <tr>
                     <td>Used Technologies</td>
