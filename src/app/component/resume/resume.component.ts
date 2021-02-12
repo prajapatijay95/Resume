@@ -11,7 +11,14 @@ import {
   faCogs,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { ExperienceModel } from "../experience-table/experience-table.component";
+
+export class ExperienceModel {
+  title?: string = "";
+  projectName: string = "";
+  description: string = "";
+  technologies: string[] = [];
+  tools: string[] = [];
+}
 
 @Component({
   selector: "app-resume",
