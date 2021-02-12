@@ -1,0 +1,17 @@
+<main class="resume-canvas">
+  <div class="grid-parent">
+    <div class="left-info-header uppercase">
+      <div class="img"><img [src]="coverLetter.img" /></div>
+    </div>
+    <div class="right-info-header uppercase">
+      <div class="name">{{ coverLetter.name }}</div>
+      <div class="position">{{ coverLetter.positionTitle }}</div>
+    </div>
+    <div class="left-info">
+      <app-section [information]="coverLetter.leftInfo"></app-section>
+    </div>
+    <div class="right-info">
+      <app-section [information]="coverLetter.rightInfo"></app-section>
+    </div>
+  </div>
+</main>
